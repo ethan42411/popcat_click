@@ -3,7 +3,9 @@
     ```
     pip install selenium
     ```
-2. Download WebDriver and put it beside app.py. The WebDriver download link is as follows 
+2. Download WebDriver(Default will use Microsoft Edge) and put it beside app.py. The WebDriver download link is as follows
+
+    If want to use firefox, you need to download geckodriver, and then uncomment `browser = webdriver.Firefox(executable_path="geckodriver.exe")` and comment `browser = webdriver.Edge(executable_path=DRIVER)` in app.py
 
 3. Run the app.py
     ```
